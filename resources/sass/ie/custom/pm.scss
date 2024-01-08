@@ -1,0 +1,130 @@
+.table-sticky {
+
+    .yearly-lines {
+        .el-select {
+            .el-input--medium .el-input__inner {
+                font-size: 0.85rem;
+                padding-left: 10px;
+                padding-right: 25px;
+            }
+        }
+    }
+
+    /* Use position: sticky to have it stick to the edge
+    * and top, right, or left to choose which edge to stick to: */
+    thead th {
+        position: -webkit-sticky; /* for Safari */
+        position: sticky;
+        top: 0;
+        /* Ensure this stays above the emulated border right in tbody th {}: */
+        z-index: 1;
+    }
+    
+    
+    /* To have the header in the first column stick to the left: */
+    thead th.freeze-col {
+        left: 0;
+        z-index: 3;
+        padding: 0px;
+        height: 50px;
+
+        > div.freeze-col-content {
+            height: 100%;
+            padding: 8px;
+            // border-right: 1px solid #e7e7e7;
+            /* Browsers tend to drop borders on sticky elements, so we emulate the border-right using a box-shadow to ensure it stays: */
+            box-shadow: 1px 0 0 0 #e7e7e7;
+        }
+
+    }
+    
+    tbody th.freeze-col {
+        position: -webkit-sticky; /* for Safari */
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        padding: 0px;
+        height: 50px;
+
+        > div.freeze-col-content {
+            height: 100%;
+            padding: 8px;
+            // border-right: 1px solid #e7e7e7;
+            /* Browsers tend to drop borders on sticky elements, so we emulate the border-right using a box-shadow to ensure it stays: */
+            box-shadow: 1px 0 0 0 #e7e7e7;
+        }
+    }
+
+    tbody td.freeze-col {
+        position: -webkit-sticky; /* for Safari */
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        padding: 0px;
+        background: #FFF;
+        height: 50px;
+
+        > div.freeze-col-content {
+            height: 100%;
+            padding: 8px;
+            background: #FFF;
+            // border-right: 1px solid #e7e7e7;
+            /* Browsers tend to drop borders on sticky elements, so we emulate the border-right using a box-shadow to ensure it stays: */
+            box-shadow: 1px 0 0 0 #e7e7e7;
+        }
+    }
+
+    /* To have the header in the first column stick to the left: */
+    thead th.freeze-col-right {
+        right: 0;
+        z-index: 3;
+        padding: 0px;
+        height: 50px;
+
+        > div.freeze-col-content {
+            height: 100%;
+            padding: 8px;
+            border-left: 1px solid #e7e7e7;
+            /* Browsers tend to drop borders on sticky elements, so we emulate the border-right using a box-shadow to ensure it stays: */
+            box-shadow: 1px 0 0 0 #e7e7e7;
+        }
+
+    }
+    
+    tbody th.freeze-col-right {
+        position: -webkit-sticky; /* for Safari */
+        position: sticky;
+        right: 0;
+        z-index: 2;
+        padding: 0px;
+        height: 50px;
+
+        > div.freeze-col-content {
+            height: 100%;
+            padding: 8px;
+            border-left: 1px solid #e7e7e7;
+            /* Browsers tend to drop borders on sticky elements, so we emulate the border-right using a box-shadow to ensure it stays: */
+            box-shadow: 1px 0 0 0 #e7e7e7;
+        }
+    }
+
+    tbody td.freeze-col-right {
+        position: -webkit-sticky; /* for Safari */
+        position: sticky;
+        right: 0;
+        z-index: 2;
+        padding: 0px;
+        background: #FFF;
+        height: 50px;
+
+        > div.freeze-col-content {
+            height: 100%;
+            padding: 8px;
+            border-left: 1px solid #e7e7e7;
+            background: #FFF;
+            /* Browsers tend to drop borders on sticky elements, so we emulate the border-right using a box-shadow to ensure it stays: */
+            box-shadow: 1px 0 0 0 #e7e7e7;
+        }
+    }
+
+}

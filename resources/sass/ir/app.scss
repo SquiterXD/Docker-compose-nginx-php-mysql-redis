@@ -1,0 +1,141 @@
+@media (max-width: 576px) {
+  .lable_align {
+    text-align: left;
+  }
+  .width_table {
+    min-width: 250px
+  }
+}
+@media (max-width: 768px) {
+  .lable_align {
+    text-align: left;
+  }
+  .width_table {
+    min-width: 250px
+  }
+}
+@media (min-width: 768px) {
+  .lable_align {
+    text-align: right;
+  }
+  .margin_auto_btn_search {
+    margin: initial;
+  }
+  .width_table {
+    min-width: 250px
+  }
+}
+@media (min-width: 992px) {
+  .lable_align {
+    text-align: right;
+  }
+  .margin_auto_btn_search {
+    margin: auto;
+  }
+  .width_table {
+    min-width: 250px
+  }
+}
+
+@media (min-width: 1200px) {
+  .lable_align {
+    text-align: right;
+  }
+  .margin_auto_btn_search {
+    margin: auto;
+  }
+  .width_table {
+    width: auto;
+  }
+}
+.table_style_scroll {
+  overflow-x: scroll;
+  display: block;
+}
+.table_style th, .table_style td { 
+  min-width: 110px;
+}
+
+.margin_top_20 {
+  margin-top: 20px;
+}
+// .table_index_year th, .table_index_year td {
+//   // min-width: 150px;
+//   width: 100%;
+//   min-width: 200px;
+// }
+.table_index_year th, .table_index_year tr, .table_index_year td {
+  min-width: 200px;
+}
+.el_field {
+  .el-select, .el-input, .el-date-editor.el-input, .el-date-editor.el-range-editor {
+    width: 100%;
+  }
+  .el-form-item .el-form-item__content {
+    margin-left: 0px !important;
+  }
+  .el-date-editor .el-range-separator {
+    width: 10%;
+  }
+  .cell {
+    margin-bottom: 22px;
+  }
+}
+.popper_date_modal {
+  z-index: 2050 !important;
+}
+
+.el_field_table {
+  .el-form-item .el-form-item__content {
+    margin-left: 0px !important;
+    // position: inherit;
+  }
+  .el-date-editor.el-input {
+    width: 140px;
+  }
+  .currency_right {
+    input.el-input__inner {
+      text-align: right
+    }
+  }
+}
+table.table_none_border {
+  td.none_border_top {
+    border-top: none;
+  }
+}
+.padding_top_20 {
+  padding-top: 20px !important;
+}
+.padding_top_10 {
+  padding-top: 10px !important;
+}
+.el-input__inner .mx-input-wrapper input.input_date_small { // mx-datepicker
+  height: 25px;
+}
+
+.style_icon_calendar i.mx-icon-calendar {
+  background-color: white;
+  padding-left: 7px;
+}
+
+tr.style_row_show {
+  :hover {
+    cursor: pointer;
+    /* background-color: #d4edda; */
+  }
+}
+tbody#table_search tr.highlight {
+  cursor: pointer;
+  background-color: #d4edda;
+}
+tbody#table_edit tr.highlight {
+  cursor: pointer;
+  background-color: #d4edda;
+}
+// .display_none_el_icon_close_tip 
+//   .el-upload-list__item.is-success:focus:not(:hover) 
+//   .el-icon-close-tip {
+//   display: none;
+// }
+

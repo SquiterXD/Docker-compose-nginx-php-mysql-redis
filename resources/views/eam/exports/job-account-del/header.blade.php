@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+
+        body {
+                font-family: 'SarabunSans';
+                font-size: 10px;
+            }
+
+            .table-content {
+                border-collapse: collapse;
+                font-size: 10px;
+                page-break-inside:auto;
+            }
+
+            .table-header {
+                text-align: center;
+            }
+
+            .table-content tr {
+                page-break-inside:avoid;
+                page-break-after:auto;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+            .col-1  { width: 10px; }
+            .col-2  { width: 60px; }
+            .col-3  { width: 60px; }
+            .col-4  { width: 200px; }
+            .col-5  { width: 200px; }
+            .col-6  { width: 40px; }
+            .col-7  { width: 60px; }
+            .col-8  { width: 60px; }
+            .col-9  { width: 200px; }
+            .col-10 { width: 200px; }
+
+
+            .table-main {
+                border-collapse: collapse;
+                font-size: 10px;
+                page-break-inside:auto;
+            }
+            .table-main thead tr td {
+                text-align: center;
+            }
+            .table-main tr {
+                page-break-inside:avoid;
+                page-break-after:auto;
+            }
+
+            .table-footer {
+                margin-top: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: 'SarabunSans';
+                font-size: 10px;
+            }
+    </style>
+    <script>
+        function subst() {
+            var vars={};
+            var x=document.location.search.substring(1).split('&');
+            for (var i in x) {var z=x[i].split('=',2);vars[z[0]] = unescape(z[1]);}
+            var x=['frompage','topage','page','webpage','section','subsection','subsubsection'];
+            for (var i in x) {
+                var y = document.getElementsByClassName(x[i]);
+                for (var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];
+            }
+        }
+    </script>
+</head>
+<body onload="subst()" style="margin:0; padding: 0; overflow:hidden;">
+
+    <table class="table-content">
+        <thead>
+            <tr style="text-align: center;">
+                <td colspan="3" width="33.33%" align="left">EAM_506 V 1.1</td>
+                <td colspan="4" width="33.33%">การยาสูบแห่งประเทศไทย</td>
+                <td colspan="3" width="33.33%"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td colspan="3" width="33.33%"></td>
+                <td colspan="4" width="33.33%" style="">รายงานบัญชีงานระหว่างประกอบ (แยกรายละเอียด)</td>
+                <td colspan="3" width="33.33%" align="right">วันที่/วันที่จัดพิมพ์ : {{Str::upper($date['now']) }}</td>
+            </tr>
+            <tr>
+                <td colspan="3" width="33.33%"></td>
+                <td colspan="4" width="33.33%" align="center" style="">จากวันที่ {{Str::upper($date['from']) }} ถึง {{Str::upper($date['to']) }}</td>
+                <td colspan="3" width="33.33%" style="text-align: right;">
+                    จำนวนหน้า/หน้าทั้งหมด <span class="page"></span> / <span class="topage"></span>
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td colspan="10">ประเภท Job สั่งผลิต</td>
+            </tr>
+            <tr class="table-header">
+                <td class="col-1"></td>
+                <td class="col-2"></td>
+                <td class="col-3"></td>
+                <td class="col-4"></td>
+                <td class="col-5"></td>
+                <td class="col-6"></td>
+                <td class="col-7"></td>
+                <td class="col-8"></td>
+                <td class="col-9"></td>
+                <td class="col-10"></td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>

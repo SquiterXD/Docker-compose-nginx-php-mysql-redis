@@ -1,0 +1,1 @@
+Vue.component('pm-wip-loss-quantity', () => import('./pm/wip-loss-quantity/Index'));

@@ -1,0 +1,62 @@
+
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "vue-select/src/scss/vue-select.scss";
+@import "vue2-timepicker/dist/VueTimepicker.css";
+@import "vue-loading-overlay/dist/vue-loading.css";
+
+.error_msg {
+  color: red;
+  padding-top: 5px;
+}
+
+.qr-btn {
+    font-weight: 600 !important;
+    font-size: 100% !important;
+    height: 100%;
+    /* width: 90px; */
+    height: 90px !important;
+    font-size: 20px !important;
+    width: 100% !important;
+}
+
+
+.mx-datepicker {
+    position: relative;
+    display: inline-block;
+    width: inherit;
+    height: 40px !important;
+    padding-top: 4px;
+
+    .mx-input-wrapper {
+
+        input {
+            border: none;
+            height: 30px;
+            width: 100%;
+            outline-style: none;
+            box-shadow: none;
+        }
+
+        input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+
+        .mx-icon-calendar, .mx-icon-clear {
+            right: 0px;
+            color: #999;
+        }
+    }
+
+}
+
+.sweet-alert {
+    .lead {
+      font-size: 1rem;
+    }
+}
+.ibox-content .vm--overlay {
+    height: 100%;
+    min-height: 100vh;
+}

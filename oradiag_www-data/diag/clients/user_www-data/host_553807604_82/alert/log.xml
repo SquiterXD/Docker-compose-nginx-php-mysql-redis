@@ -1,0 +1,331 @@
+<msg time='2021-02-16T11:36:21.059+00:00' org_id='oracle' comp_id='clients'
+ msg_id='dbgrmmdcrf_create_relation_full:1953:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='d857aaee4369' host_addr='192.168.2.5'
+ version='1'>
+ <txt>Create Relation ADR_CONTROL
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:21.430+00:00' org_id='oracle' comp_id='clients'
+ msg_id='dbgrmmdcrf_create_relation_full:1953:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='d857aaee4369' host_addr='192.168.2.5'>
+ <txt>Create Relation ADR_INVALIDATION
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:21.562+00:00' org_id='oracle' comp_id='clients'
+ msg_id='dbgrmmdcrf_create_relation_full:1953:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='d857aaee4369' host_addr='192.168.2.5'>
+ <txt>Create Relation INC_METER_IMPT_DEF
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.036+00:00' org_id='oracle' comp_id='clients'
+ msg_id='dbgrmmdcrf_create_relation_full:1953:1503427940' type='NOTIFICATION' group='create'
+ level='16' host_id='d857aaee4369' host_addr='192.168.2.5'>
+ <txt>Create Relation INC_METER_PK_IMPTS
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.209+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>
+
+***********************************************************************
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.234+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>
+Fatal NI connect error 12170.
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.260+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>
+  VERSION INFORMATION:
+TNS for Linux: Version 12.1.0.2.0 - Production
+TCP/IP NT Protocol Adapter for Linux: Version 12.1.0.2.0 - Production
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.292+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>  Time: 16-FEB-2021 11:36:22
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.315+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>  Tracing not turned on.
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.337+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>  Tns error struct:
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.362+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    ns main err code: 12535
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.381+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.411+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>TNS-12535: Message 12535 not found; No message file for product=network, facility=TNS
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.446+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    ns secondary err code: 12560
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.463+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    nt main err code: 505
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.485+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.503+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>TNS-00505: Message 505 not found; No message file for product=network, facility=TNS
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.538+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    nt secondary err code: 110
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.563+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    nt OS err code: 0
+ </txt>
+</msg>
+<msg time='2021-02-16T11:36:22.697+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>  Client address: &lt;unknown&gt;
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.023+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>
+
+***********************************************************************
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.044+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>
+Fatal NI connect error 12170.
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.064+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>
+  VERSION INFORMATION:
+TNS for Linux: Version 12.1.0.2.0 - Production
+TCP/IP NT Protocol Adapter for Linux: Version 12.1.0.2.0 - Production
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.089+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>  Time: 16-FEB-2021 11:37:58
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.106+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>  Tracing not turned on.
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.119+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>  Tns error struct:
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.133+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    ns main err code: 12535
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.148+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.171+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>TNS-12535: Message 12535 not found; No message file for product=network, facility=TNS
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.185+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    ns secondary err code: 12560
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.200+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    nt main err code: 505
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.214+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.229+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>TNS-00505: Message 505 not found; No message file for product=network, facility=TNS
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.243+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    nt secondary err code: 110
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.265+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    nt OS err code: 0
+ </txt>
+</msg>
+<msg time='2021-02-16T11:37:58.281+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>  Client address: &lt;unknown&gt;
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:16.913+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>
+
+***********************************************************************
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:16.933+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>
+Fatal NI connect error 12170.
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:16.949+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>
+  VERSION INFORMATION:
+TNS for Linux: Version 12.1.0.2.0 - Production
+TCP/IP NT Protocol Adapter for Linux: Version 12.1.0.2.0 - Production
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:16.962+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>  Time: 16-FEB-2021 11:38:16
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:16.979+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>  Tracing not turned on.
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:16.993+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>  Tns error struct:
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:17.009+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    ns main err code: 12535
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:17.022+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:17.039+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>TNS-12535: Message 12535 not found; No message file for product=network, facility=TNS
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:17.052+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    ns secondary err code: 12560
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:17.063+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    nt main err code: 505
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:17.078+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:17.097+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>TNS-00505: Message 505 not found; No message file for product=network, facility=TNS
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:17.111+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    nt secondary err code: 110
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:17.125+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>    nt OS err code: 0
+ </txt>
+</msg>
+<msg time='2021-02-16T11:38:17.140+00:00' org_id='oracle' comp_id='clients'
+ type='UNKNOWN' level='16' host_id='d857aaee4369'
+ host_addr='192.168.2.5'>
+ <txt>  Client address: &lt;unknown&gt;
+ </txt>
+</msg>

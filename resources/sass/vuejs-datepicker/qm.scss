@@ -1,0 +1,36 @@
+.qm-content {
+
+    .vdp-datepicker {
+        height: 40px;
+        padding: 4px 12px;
+        padding-right: 20px;
+        input, select {
+            padding: inherit;
+            height: 30px;
+            line-height: 30px;
+            color: #606266;
+            font-size: inherit;
+            border: none;
+            width: 100%;
+            outline-style: none;
+            box-shadow: none;
+        }
+        input::placeholder, select::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #bbb;
+            opacity: 1; /* Firefox */
+        }
+        .vdp-datepicker__clear-button, .vdp-datepicker__calendar-button {
+            position: absolute;
+            color: #aaa;
+            line-height: 30px;
+        }
+
+    }
+
+    .vdp-datepicker.qm-to-date {
+        .vdp-datepicker__calendar {
+            left: -100px;
+        }
+    }
+    
+}

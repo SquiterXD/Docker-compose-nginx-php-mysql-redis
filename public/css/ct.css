@@ -1,0 +1,10 @@
+.el-select-dropdown {
+    z-index: 2050 !important;
+}
+
+.highlightable-tr:hover{
+    background: #0e9aef;
+}
+.highlightable-tr:active{
+    background: #00bfa5;
+}

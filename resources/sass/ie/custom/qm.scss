@@ -1,0 +1,115 @@
+.qm_issue_not_found_checkbox {
+
+    .el-checkbox.el-checkbox--small.is-bordered {
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+
+}
+
+.qm-time-picker-required {
+    .time-picker {
+        input {
+            background-color: #fffbe4;
+        }
+    }
+}
+
+.qm-el-select-required {
+    .el-input__inner {
+        background-color: #fffbe4;
+    }
+}
+
+.qm-form {
+
+    .el-checkbox.is-bordered {
+        height: auto;
+        border: none;
+        .el-checkbox__label {
+            color: #222;
+        }
+        .el-checkbox__input.is-checked + .el-checkbox__label {
+            color: #222;
+        }
+    }
+    
+    .el-checkbox.el-checkbox--small.is-bordered.tw-border-yellow-400 {
+        border: 2px solid rgba(251, 191, 36, 1);
+    }
+
+    .el-checkbox.el-checkbox--small.is-bordered.tw-border-green-400 {
+        border: 2px solid rgba(52, 211, 153, 1);
+    }
+
+    .el-checkbox.el-checkbox--small.is-bordered.tw-border-red-400 {
+        border: 2px solid rgba(248, 113, 113, 1);
+    }
+
+    .el-checkbox.el-checkbox--small.is-bordered.tw-border-blue-400 {
+        border: 2px solid rgba(96, 165, 250, 1);
+    }
+
+    .el-checkbox.el-checkbox--small.is-bordered.tw-border-purple-400 {
+        border: 2px solid rgba(167, 139, 250, 1);
+    }
+    
+    .el-checkbox__label {
+        font-weight: 600;
+    }
+
+}
+
+.table-borderless-horizontal > tbody > tr > td,
+.table-borderless-horizontal > tbody > tr > th,
+.table-borderless-horizontal > tfoot > tr > td,
+.table-borderless-horizontal > tfoot > tr > th,
+.table-borderless-horizontal > thead > tr > td,
+.table-borderless-horizontal > thead > tr > th {
+    border-left: none;
+    border-right: none;
+}
+
+.qm-content {
+
+    .custom-file-label {
+        padding: 0.4rem 0.4rem;
+        font-size: 0.65rem;
+        line-height: 1rem;
+        margin-bottom: 0px;
+    }
+
+    .custom-file-label::after {
+        display: none;
+    }
+
+    input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #ccc;
+        opacity: 1; /* Firefox */
+    }
+
+    .form-control:disabled, .form-control[readonly] {
+        background-color: #eff1f3;
+        opacity: 1;
+    }
+
+    .checkbox-lg {
+        /* Double-sized Checkboxes */
+        -ms-transform: scale(2); /* IE */
+        -moz-transform: scale(2); /* FF */
+        -webkit-transform: scale(2); /* Safari and Chrome */
+        -o-transform: scale(2); /* Opera */
+        transform: scale(2);
+        padding: 10px;
+    }
+
+    .el-checkbox.is-bordered.el-checkbox--medium {
+        /* Double-sized Checkboxes */
+        -ms-transform: scale(1.5); /* IE */
+        -moz-transform: scale(1.5); /* FF */
+        -webkit-transform: scale(1.5); /* Safari and Chrome */
+        -o-transform: scale(1.5); /* Opera */
+        transform: scale(1.5);
+    }
+
+}

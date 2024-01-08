@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOAT - ใบเสร็จรับเงิน </title>
+
+    <meta name="csrf-param" content="_token">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <link rel="stylesheet" href="{!! asset('css/app.css') !!}" />
+
+</head>
+<body>
+    <div class="container">
+        <table class="table" border="0" width="40%">
+            <tr>
+                <td width="50%">{{ $prints[0]->payment_number }}</td>
+               <td>{{ FormatDate::DateThaiNumericWithSplash(date_format(date_create($prints[0]->payment_date),'Y/m/d')) }}</td>
+               <td class="text-right">{{ date_format(date_create($prints[0]->payment_date),'H:i') }}</td>
+            </tr>
+            <tr>
+                <td colspan="3">{{ $prints[0]->customer_number }} {{ $prints[0]->customer_name }}</td>
+             </tr>
+            <tr>
+               <td colspan="3">{{ $prints[0]->province_thai }}</td>
+            </tr>
+            <tr>
+               <td colspan="2">ได้รับเงินเตรียมชำระค่ายาสูบ/ยาเส้น</td>
+               <td class="text-right">{{ number_format($prints[0]->total_payment_amount,2) }}</td>
+            </tr>
+            <tr>
+                <td colspan="3"><h2><strong>***{{ baht_text($prints[0]->total_payment_amount) }}***</strong></h2></td>
+            </tr>
+            <tr>
+                <td width="50%"></td>
+               <td>เงินสด</td>
+               <td class="text-right">{{ amountwithdayonprint($prints[0]->payment_header_id,0) }}</td>
+            </tr>
+            <tr>
+                <td width="50%"></td>
+               <td>เงินเชื่อ 7 วัน</td>
+               <td class="text-right">{{ amountwithdayonprint($prints[0]->payment_header_id,7) }}</td>
+            </tr>
+            <tr>
+                <td width="50%"></td>
+               <td>เงินเชื่อ 14 วัน</td>
+               <td class="text-right">{{ amountwithdayonprint($prints[0]->payment_header_id,14) }}</td>
+            </tr>
+            <tr>
+                <td width="50%">{{ number_format($prints[0]->total_payment_amount,2) }}</td>
+               <td>เงินเชื่อ 28 วัน</td>
+               <td class="text-right">{{ amountwithdayonprint($prints[0]->payment_header_id,28) }}</td>
+            </tr>
+            <tr>
+                <td width="50%"></td>
+               <td>เงินค่ายาเส้น</td>
+               <td class="text-right">0.00</td>
+            </tr>
+        </table>
+    </div>
+
+<script src="{!! asset('js/app.js') !!}" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+.eam .size-btn {
+  width: 125px;
+}
+.eam .textArea-2 {
+  resize: none;
+  height: 89px;
+}
+
+.eam .textArea-3 {
+  resize: none;
+  height: 141px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.form-control[readonly], .form-control[readonly]:focus {
+  border:1px solid #e5e6e7;
+  background-color: #FFFFFF;
+}
+.form-control[disabled] {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+/* .form-control[readonly]:focus {
+  border:1px solid #e5e6e7;
+} */
+/* .btn-default:hover, .btn-default:active {
+  border:1px solid #1ab394 !important;
+} */
+.readonly {
+  caret-color: transparent !important;
+}
+.clearable{
+  background:url(http://i.imgur.com/z7ZSYjt.png) no-repeat right -10px center;
+  border:1px solid #e5e6e7;
+  padding:6px 20px 6px 12px;
+  border-radius:3px;
+  background-color: white;
+}
+.clearable.x {
+  background-position: right 8px center;
+}
+.clearable.onX {
+  cursor:pointer;
+}
+.bg-select-table {
+  background-color: #f9f9f9;
+}
+
+.bg-loader {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .5;
+  z-index: 999999;
+}
+
+.loader {
+  display: none;
+  border: 14px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 14px solid #3498db;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 45%;
+  z-index: 9999999;
+  left: 50%;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #e5e6e7;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+  // margin: 0 15px;
+  max-height: 250px;
+  overflow: scroll;
+  margin-top: 5px;
+}
+
+.autocomplete-items div:first-of-type {
+  border-top: none;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-top: 1px solid #e5e6e7; 
+}
+
+.autocomplete-items div:hover {
+  background-color: #e9ecef; 
+}
+
+.button-select-angle {
+  font-size: 10px;
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  padding: 8px 0;
+  padding-left: 5px;
+  z-index: 3;
+  border: 0;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  color: #676a6c;
+
+  i {
+    pointer-events: none;
+  }
+}
+
+.button-select-angle[disabled] {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+

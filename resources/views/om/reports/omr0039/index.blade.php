@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    {{-- <link href="{{ public_path('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/> --}}
+
+<title>สรุปใบลดหนี้ทางการค้า (Cr.Note)</title>
+@include('ct.reports.ctr0101._style')
+    </head>
+    <body>
+    @include('om.reports.omr0039._header')
+  
+    <table width="100%" >
+        <thead>
+        <tr >
+            <td width="5%"  style="text-align: center; vertical-align: middle;">ลำดับ</td>
+            <td  style="text-align: center; vertical-align: middle;">เลขที่ใบลดหนี้</td>
+            <td  style="text-align: center; vertical-align: middle;">วันที่</td>
+            <td  style="text-align: center; vertical-align: middle;">รหัสร้านค้า</td>
+            <td  style="text-align: center; vertical-align: middle;">ชื่อร้านค้า</td>
+            <td  style="text-align: center; vertical-align: middle;">เดบิต บัญชี</td>
+            <td  style="text-align: center; vertical-align: middle;">จำนวนเงิน</td>
+            <td  style="text-align: center; vertical-align: middle;">เลขที่<br>ใบกำกับสินค้า</td>
+            <td  style="text-align: center; vertical-align: middle;">ประเภทเดบิต<br> เจ้าหนี้ (บุหรี่)</td>
+            <td  style="text-align: center; vertical-align: middle;">ประเภทเดบิต<br>เจ้าหนี้ (ยาเส้น)</td>
+            <td  style="text-align: center; vertical-align: middle;">ประเภทเดบิต<br>ลูกหนี้เงินเชื่อ 7 วัน</td>
+            <td  style="text-align: center; vertical-align: middle;">ประเภทเดบิต<br>ลูกหนี้เงินเชื่อ 28 วัน</td>
+        </tr>
+        </thead>
+        <tbody>
+            @php
+                $countRow = 0;
+                $sumAmount =0;
+                $sumCR_TYPE_1   =   0;
+                $sumCR_TYPE_2   =0;
+                $sumCR_7        =   0;    
+                $sumCR_28       =   0;  
+            @endphp
+
+        @foreach($dataLists as $dataListH)
+            @php
+                    $countRow = $countRow+1;
+                    $CR_TYPE_1  =0;
+                    $CR_TYPE_2  =0;
+                    $CR_7       =0;
+                    $CR_28      =0;
+                    
+                        $CR_TYPE_1 = $dataListH->amount_cg_0;
+                        $CR_TYPE_2 = $dataListH->amount_l_0;
+                        $CR_7 = $dataListH->amount_cg_3;
+                        $CR_28 = $dataListH->amount_cg_2;
+                    $sumAmount=$dataListH->cn_amount+$sumAmount;
+                    $sumCR_TYPE_1=$sumCR_TYPE_1+$CR_TYPE_1;
+                    $sumCR_TYPE_2=$sumCR_TYPE_2+$CR_TYPE_2;
+                    $sumCR_7=$sumCR_7+$CR_7;
+                    $sumCR_28=$sumCR_28+$CR_28;
+            @endphp
+            <tr >
+                <td style="text-align: center; vertical-align: middle;">{{$countRow }}</td>
+                <td style="text-align: center; vertical-align: middle;">{{$dataListH->cn_number}}</td>
+                <td style="text-align: center; vertical-align: middle;">{{Carbon\Carbon::createFromFormat('d/m/Y',$dataListH->cn_date)->addYears(543)->format('d/m/Y')}}</td>
+                <td style="text-align: center; vertical-align: middle;">{{$dataListH->customer_number}}</td>
+                <td style="text-align: left; vertical-align: middle;">{{$dataListH->customer_name}}</td>
+                <td style="text-align: center; vertical-align: middle;">{{$dataListH->dr_account_code}}</td>
+                <td style="text-align: right; vertical-align: middle;">{{number_format($dataListH->cn_amount,2)}}</td>
+                <td style="text-align: right; vertical-align: middle;">{{$dataListH->ref_invoice_number}}</td>
+                <td style="text-align: right; vertical-align: middle;">{{$CR_TYPE_1==0?'':number_format($CR_TYPE_1,2)}}</td>
+                <td style="text-align: right; vertical-align: middle;">{{$CR_TYPE_2==0?'':number_format($CR_TYPE_2,2)}}</td>
+                <td style="text-align: right; vertical-align: middle;">{{$CR_7==0?'':number_format($CR_7,2)}}</td>
+                <td style="text-align: right; vertical-align: middle;">{{$CR_28==0?'':number_format($CR_28,2)}}</td>
+            </tr>
+            
+        @endforeach
+
+            <tr >
+                <td style="text-align: center; vertical-align: middle;" colspan="4">รวมจำนวนใบลดหนี้ทั้งหมด {{$countRow}} ใบ</td>
+                <td style="text-align: center; vertical-align: middle;" colspan="2"></td>
+                <td style="text-align: right; vertical-align: middle;">{{number_format($sumAmount,2)}}</td>
+                <td style="text-align: right; vertical-align: middle;"></td>
+                <td style="text-align: right; vertical-align: middle;">{{$sumCR_TYPE_1==0?'-':number_format($sumCR_TYPE_1,2)}}</td>
+                <td style="text-align: right; vertical-align: middle;">{{$sumCR_TYPE_2==0?'-':number_format($sumCR_TYPE_2,2)}}</td>
+                <td style="text-align: right; vertical-align: middle;">{{$sumCR_7==0?'-':number_format($sumCR_7,2)}}</td>
+                <td style="text-align: right; vertical-align: middle;">{{$sumCR_28==0?'-':number_format($sumCR_28,2)}}</td>
+            </tr>
+            <tr>
+                <td style="height: 20px;" ></td>
+            </tr>
+            @php
+                $sum_amount=0;
+            @endphp
+            @foreach($dataListsBOTTOM as $dataListsB)
+            @php
+                $sum_amount=$sum_amount+$dataListsB->sum_amount;
+            @endphp
+            {{-- <tr>
+                <td colspan="5" ></td>
+                <td colspan="1" style="text-align: center; vertical-align: middle;">{{$dataListsB->dr_account_code}}</td>
+                <td style="text-align: right; vertical-align: middle;">{{number_format($dataListsB->sum_amount,2)}}</td>
+            </tr> --}}
+            @endforeach
+            <tr>
+                <td colspan="5" ></td>
+                <td colspan="1" style="text-align: center; vertical-align: middle;">รวม</td>
+                <td style="text-align: right; vertical-align: middle;">{{number_format($sum_amount,2)}}</td>
+                
+            </tr>
+            <tr>
+                <td style="height: 30px;" ></td>
+            </tr>
+            
+            <tr>
+                <td colspan="6" style="text-align: LEFT; vertical-align: middle;">             {{$TEXT}}</td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align: center; vertical-align: middle;"> จบรายงาน</td>
+                <td colspan="6" style="text-align: right; vertical-align: middle;"> ผู้จัดทำ____________________ผู้รับรอง____________________</td>
+            </tr>
+        </tbody>
+    </table>
+
+   
+    
+    </body>
+</html>

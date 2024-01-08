@@ -1,0 +1,33 @@
+@media (max-width: 576px) {
+    .lable_align {
+        text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    .lable_align {
+        text-align: left;
+    }
+}
+@media (min-width: 768px) {
+    .lable_align {
+        text-align: right;
+    }
+}
+@media (min-width: 992px) {
+    .lable_align {
+        text-align: right;
+    }
+}
+
+@media (min-width: 1200px) {
+   .lable_align {
+       text-align: right;
+   }
+}
+.table_style_scroll {
+    overflow-x: scroll;
+    display: block;
+}
+.table_style th, td { 
+    min-width: 110px;
+}

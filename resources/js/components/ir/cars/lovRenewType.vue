@@ -1,0 +1,72 @@
+<template>
+  <div class="el_field">
+    <el-select  v-model="data"
+                filterable
+                remote
+                :clearable="true"
+                :size='sizeDefault'
+                :loading="loading"
+                placeholder="ประเภทการต่ออายุ"
+                @change="changeRenewType"
+                @click.native="click()"
+                :disabled='disabled'
+                :popper-append-to-body="popperBody">
+      <el-option  v-for="(data) in renewTypeList"
+                  :key="data.rn"
+                  :label="`${data.description}`"
+                  :value="data.lookup_code">
+      </el-option>
+    </el-select>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'car-renew-type',
+  data() {
+    return {
+      loading: false,
+      data: this.value,
+      renewTypeList: [],
+      sizeDefault: this.sizeSmall ? 'small' : 'large'
+    }
+  },
+  props: ['value','popperBody', 'disabled', 'sizeSmall'],
+  // mounted() {
+  //   const vm = this
+  //   vm.getLovGasStationType()
+  // },
+  methods: {
+    getLovGasStationType(params = {keyword: ''}) {
+      const vm = this
+      vm.loading = true
+      axios.get('/ir/ajax/lov/renew-type', {params})
+      .then(({data:response}) => {
+         
+        vm.loading = false
+        vm.renewTypeList = response.data
+      })
+      .catch((error) => {
+        swal("Error", error, "error");
+      })
+    },
+    click () {
+      const vm = this
+      // vm.getLovGasStationType()
+    },
+    changeRenewType(value) {
+      const vm = this
+      vm.$emit('renewType', value)
+    }
+  },
+  watch: {
+    value(newVal) {
+      const vm = this
+      vm.data = newVal
+    }
+  },
+  created(){
+    this.getLovGasStationType();
+  },
+}
+</script>

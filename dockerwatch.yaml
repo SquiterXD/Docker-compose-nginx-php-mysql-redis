@@ -1,0 +1,17 @@
+#  docker-compose -f docker-compose.yml config check validate config
+version: "2.1"
+services:
+  larawatch:
+    image: "node:16.13.1-alpine"
+    working_dir: /srv/
+    restart: "always"
+    command: ["yarn", "run", "watch"]
+    volumes:
+      - ./:/srv/
+
+networks:
+  default:
+    external:
+      name: proxy-network
+
+

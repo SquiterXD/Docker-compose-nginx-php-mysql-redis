@@ -1,0 +1,49 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap');*/
+@font-face {
+    font-family:'Sarabun-Regular';
+    src: url("/fonts/Sarabun-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    font-family: 'Sarabun-Regular', Arial,Helvetica,sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+}
+.flexrow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.flexrow > div {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+.flexrow > div:last-child {
+    margin-right: 0;
+}
+.txthead {
+    font-size: 15px;
+}
+table th {
+    padding:10px 0px 10px 0px;
+    border-top: 1px solid #000000;
+    border-bottom:1px solid #000000;
+}
+
+tfoot td {
+    padding:10px 10px 10px 10px;
+    border-top: 1px solid #000000;
+    border-bottom:1px solid #000000;
+}
+
+.table > tbody > tr{
+    page-break-inside: avoid;
+}
+
+hr { background-color: black; height: 1px; border: 0; }

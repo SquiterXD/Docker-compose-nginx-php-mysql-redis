@@ -1,0 +1,462 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+
+    /* TEST USE FONT 01/03/2565 */
+
+@font-face {
+	font-family: 'CordiaUPC';
+    src: url("../fonts/cordiau-webfont.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'CordiaUPC';
+    src: url("../fonts/cordiaupc_bold-webfont.woff");
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'AngsanaUPC';
+    src: url("../fonts/angsau-webfont.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'AngsanaUPC';
+    src: url("../fonts/angsaui-webfont.woff");
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+@font-face {
+	font-family: 'AngsanaUPC';
+    src: url("../fonts/angsaub-webfont.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'AngsanaUPC';
+    src: url("../fonts/angsauz-webfont.woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+/*04/01/2022*/
+
+/* @font-face {
+    font-family: 'CordiaUPC';
+    src: url(../fonts/cordiau-webfont.woff2) format('woff2'),
+         url(../fonts/cordiau-webfont.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'CordiaUPC';
+    src: url(../fonts/cordiaupc_bold-webfont.woff2) format('woff2'),
+         url(../fonts/cordiaupc_bold-webfont.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'AngsanaUPC';
+    src: url(../fonts/angsau-webfont.woff2) format('woff2'),
+         url(../fonts/angsau-webfont.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'AngsanaUPC';
+    src: url(../fonts/angsaui-webfont.woff2) format('woff2'),
+         url(../fonts/angsaui-webfont.woff) format('woff');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'AngsanaUPC';
+    src: url(../fonts/angsaub-webfont.woff2) format('woff2'),
+         url(../fonts/angsaub-webfont.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'AngsanaUPC';
+    src: url(../fonts/angsauz-webfont.woff2) format('woff2'),
+         url(../fonts/angsauz-webfont.woff) format('woff');
+    font-weight: 700;
+    font-style: italic;
+
+} */
+
+.angsanaUPC{
+  font-family: 'AngsanaUPC';
+}
+.cordiaUPC{
+  font-family: 'CordiaUPC';
+  font-weight: 400
+}
+
+
+body {
+  font-family:'Sarabun', "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #2f4050;
+  font-size: 9pt;
+  color: #000; /*676a6c*/
+  overflow-x: hidden;
+}
+
+/* root:{
+  --f12:12px;
+  --f14:14px;
+} */
+
+.page-a4{
+  background: white;
+  display: block;
+  margin: 0 auto;
+  /* margin-bottom: 0.5cm; */
+  /* box-shadow: 0 0 0.5cm rgba(0,0,0,0.5); */
+
+  /*A4*/
+  width: 21cm;
+  /* height:auto; */
+  /* height: 29.7cm; */
+  position: relative;
+
+
+}
+
+.subpage{
+  display: block;
+  padding:2cm;
+
+}
+.subpage.smallgap{
+  padding:0.7cm
+}
+.subpage.mediumgap{
+  padding:1.5cm
+}
+.border{
+  display: block;
+  position: relative;
+ border:0 !important;
+}
+
+/*=======================================
+                report
+=======================================*/
+
+
+.report-header{
+  display: flex;
+  padding-bottom:0;
+  color: #000
+}
+.report-header .logo{
+  width: 95px;
+  margin: 0;
+  padding:10px 0 0;
+}
+.report-header .info{
+  width: calc(100% - 120px);
+  padding-left:10px;
+  font-size: 11pt;
+}
+.report-header .info h3{
+  font-size: 20pt;
+  color: #000;
+  text-transform:uppercase;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 3px;
+}
+.report-header .info h5{
+  font-size: 12pt;
+  color: #000;
+  text-transform:uppercase;
+  font-weight:600;
+  margin: 0 0 5px;
+  white-space: nowrap;
+}
+.report-header .info p{
+  margin: 0;
+  line-height: 1
+}
+.report-header .report-stamp{
+  display: block;
+  text-align: center;
+  color: #000;
+  border:1px solid #555555;
+  padding:15px 10px;
+  min-width:210px
+}
+.report-header .report-stamp h5{
+  font-size: 12pt;
+  color: inherit;
+}
+.report-header .unit{
+  position: absolute;
+  bottom: 5px;
+  left: -80px;
+}
+.report-title{
+  font-size: 18pt;
+  text-transform:uppercase;
+  font-weight: 700;
+  color: #000000;
+  margin: 10px 0;
+  text-align: center;
+}
+h3.report-title{
+  font-size: 12pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+.report-header.center{
+  flex-direction: column;
+  text-align: center;
+}
+.report-header.center .logo{
+  margin: 0 auto 5px;
+  padding:0;
+}
+.report-header.center .info{
+  width: 100%;
+  padding: 0;
+}
+.report-header.center .info.row{width: auto; margin: 0}
+.report-header.center h3{margin-bottom: 25px}
+.report-header.center h5{
+  font-size: 11pt;
+  color: #000;
+  font-weight: 400
+}
+.table-report-foreign{
+  width: 100%;
+  border-collapse: collapse;
+  color: #000;
+  margin-top:3px
+}
+.table-report-foreign.text-black{
+  color: #000000;
+}
+.table-report-foreign.f12{font-size: 9pt}
+.table-report-foreign strong{
+  font-weight:600
+}
+.table-report-foreign p{
+  margin-bottom: 0;
+  line-height: 1.2
+}
+.table-report-foreign th{
+   padding:10px;
+}
+.table-report-foreign td{
+  border:1px solid #555555;
+  padding:10px;
+  position: relative;
+  vertical-align: top;
+
+}
+.table-report-foreign td p.title{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  right: 10px;
+}
+.table-report-foreign td p.title + div{
+  padding-top: 15px
+}
+.table-report-foreign.no-border td{
+  border:0 !important;
+}
+
+.table-report-foreign tr.total td{
+  border-bottom: 2px double #555
+}
+.signature{
+  display: block;
+  height: 75px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #555555;
+  width: 280px;
+}
+ .bold{font-weight: bold !important;}
+ .semibold{font-weight: 600 !important}
+.nowrap{white-space: nowrap;}
+/*.table-report-foreign thead th{
+  background-color: #ccc;
+  border:1px solid #000;
+}*/
+.table-report-foreign .align-middle td {vertical-align: middle;}
+
+.table-report-foreign.has-border{
+  border: 1px solid #555555;
+}
+.table-report-foreign tr.has-bg th {
+    background-color: #cccccc;
+    border-bottom: 1px solid #555555;
+    border-left: 1px solid #555;
+    padding: 8px 10px;
+}
+
+.table-report-foreign.table1,
+.table-report-foreign.table2,
+.table-report-foreign.table3,
+.table-report-foreign.table4 {font-size: 9pt;}
+
+.table-report-foreign.text-xs tr td,
+.table-report-foreign.text-xs tr th{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.table-report-foreign.table1{margin-top: 0}
+.table-report-foreign.table1 td:nth-child(1),
+.table-report-foreign.table1 td:nth-child(2){width: 22%}
+.table-report-foreign.table1 td:nth-child(3),
+.table-report-foreign.table1 td:nth-child(4){width:28%}
+
+.table-report-foreign.table1 tr.first td{
+  padding: 0;
+  border:0 !important;
+}
+
+.table-report-foreign.table2{
+  border:1px solid #555555;
+}
+.table-report-foreign.table2 th{
+  background-color: #cccccc;
+  text-align: right;
+  border-bottom: 1px solid #555555;
+  padding:6px 10px;
+}
+.table-report-foreign.table2 td{
+  border:0;
+  text-align: right;
+  line-height: 12px;
+}
+.table-report-foreign.table2 tr.total td{
+  padding-top: 0;
+  padding-bottom: 0;
+  border:0;
+}
+
+.table-report-foreign.table2 tr th:nth-child(2){
+  width: 45%
+}
+.table-report-foreign.table2 tr th:last-child,
+.table-report-foreign.table2 tr td:last-child{
+  padding-right: 30px
+}
+
+.table-report-foreign.table3{table-layout: fixed;}
+.table-report-foreign.table3 td{width: 33.333%}
+
+.table-report-foreign.table4 td{
+  border:0;
+  padding: 10px
+}
+.table-report-foreign.table4 td:nth-child(1){width: 22%}
+.table-report-foreign.table4 td:nth-child(2){width: 30% }
+.table-report-foreign.table4 td:nth-child(3){width: 50%}
+
+.table-report-foreign.table4 table td {
+  padding: 0px 5px;
+}
+.table-report-foreign.table4 td:nth-child(2){width: 30% }
+.table-report-foreign.table4 td:nth-child(3){width: 50%}
+
+.table-report-foreign.table4 table td{
+  padding: 1px 5px
+}
+td th,
+.table tr:first-child td{
+  border-top:2px solid #555;
+}
+
+.table tr.no-border th,
+.table tr.no-border td{
+  border-top:0;
+  padding-top: 0
+}
+
+.table tr.total th,
+.table tr.total td{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top:2px solid #555;
+  border-bottom:1px solid #555;
+}
+span.underline{
+  display: block;
+  border-bottom: 2px solid #555
+}
+table h5{
+  font-size: 10pt;
+  font-weight: 500;
+  margin-bottom: 0
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  body {-webkit-print-color-adjust: exact; background-color: #ffffff !important}
+  .page-a4 {
+    height: auto;
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+    background-color: #ffffff !important;
+    page-break-inside: avoid;
+  }
+
+  body, .page-a4 {
+    margin: 0;
+    box-shadow: 0;
+  }
+  body{font-size: 11pt !important;}
+  .report-header .logo{width: 100px}
+  .report-header .info{padding-left: 20px}
+  .table-report-foreign.table1,
+  .table-report-foreign.table2,
+  .table-report-foreign.table3,
+  .table-report-foreign.table4 { font-size: 9pt !important }
+  .table-report-foreign.f12{ font-size: 11pt !important }
+  .table-report-foreign.table2 th{background: #cccccc!important;}
+
+  .report-header .info{font-size: 11pt!important}
+  .report-header.center .info h5{font-size: 14pt!important}
+  .report-header .info h5{font-size: 16pt !important}
+  table h5{font-size: 12pt!important}
+  .f12{font-size: 11pt !important}
+}

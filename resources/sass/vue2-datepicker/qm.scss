@@ -1,0 +1,34 @@
+.qm-content {
+
+    .mx-datepicker {
+        position: relative;
+        display: inline-block;
+        width: inherit;
+        height: 40px;
+        padding-top: 4px;
+    
+        .mx-input-wrapper {
+    
+            input {
+                border: none;
+                height: 30px;
+                width: 100%;
+                outline-style: none;
+                box-shadow: none;
+            }
+        
+            input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #bbb;
+                opacity: 1; /* Firefox */
+            }
+        
+            .mx-icon-calendar, .mx-icon-clear {
+                right: 0px;
+                color: #999;
+            }
+        
+        }
+    
+    }
+
+}

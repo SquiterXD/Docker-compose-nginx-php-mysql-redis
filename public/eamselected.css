@@ -1,0 +1,143 @@
+.select2-container .select2-selection--single {
+    height: 35.56px;
+    width:  100% !important;
+}
+.select2-container--default .select2-selection--single {
+    border: 1px solid #e5e6e7
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 34px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 34px;
+}
+
+.select2 .select2-container .select2-container--default{
+    height: 35.56px;
+}
+
+.input-group{
+    flex-wrap: nowrap;
+}
+
+.modal-body .select2-container {
+    width:  100% !important;
+}
+
+#eam0007 .form-group.row .select2.select2-container.select2-container--default{
+    width: 100% !important;
+}
+
+#eam0006 .select2.select2-container.select2-container--default{
+    width: 100% !important;
+}
+
+#eam0006 .modal-body .input-group{
+    padding-bottom: 10px;
+}
+
+#eam0003 .select2.select2-container.select2-container--default{
+    width: 100% !important;
+    flex-wrap: nowrap;
+}
+
+#eam0014 .select2.select2-container.select2-container--default{
+    width: 100% !important;
+}
+
+#eam0016 .select2.select2-container.select2-container--default{
+    width: 100% !important;
+}
+
+#eam0017 #setTbodyTable .select2.select2-container.select2-container--default.select2-container--disabled{
+    width: 100% !important;
+}
+
+#eam0017 #setTbodyTable .select2.select2-container.select2-container--default{
+    width: 100% !important;
+}
+
+#eam0010 #setTbodyTableGroupTechnicians .select2.select2-container.select2-container--default{
+    width: 100% !important;
+}
+
+#eam0010 #setTbodyTableComplete .select2.select2-container.select2-container--default{
+    width: 100% !important;
+}
+
+#eam0010 .select2.select2-container.select2-container--default{
+    width: 100% !important;
+}
+
+/* หน้า Notification */
+#notification .tab {
+    display: none;
+}
+#notification .tab:target {
+    display: block;
+}
+#notification .tab:last-child {
+    display: block;
+}
+#notification .tab:target ~ section.tab:last-child {
+    display: none;
+}
+#notification .tab > nav > a.active {
+    color: #1ab394;
+    border-bottom-color: #1ab394;
+}
+
+/* หน้า Notification Layout */
+#notification main {
+    max-width: 300px;
+}
+#notification .tab > * {
+    width:100%;
+    padding-top: 10px;
+    margin: 0;
+}
+#notification .tab > nav {
+    padding: 0;
+    display: flex;
+}
+#notification .tab > nav > a {
+    display: inline-block;
+    text-decoration: none;
+    color: #a7b1c2;
+    border-bottom: 5px solid #a7b1c2;
+    margin: 0;
+    padding: 10px;
+}
+#notification .tab > nav::before {
+    content: "";
+    width: 5px;
+    border-bottom: 5px solid #a7b1c2;
+}
+#notification .tab > nav::after {
+    content: "";
+    flex: 1;
+    border-bottom: 5px solid #a7b1c2;
+}
+
+#notification .oval {
+    width: 70px;
+    height: 22.5px;
+    border-radius: 40px;
+    box-shadow: 1.5px 3px #413F42;
+}
+
+#notification .dot {
+    height: 30px;
+    width: 30px;
+    background-color: #d9534f;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 1.5px 2px #413F42;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
